@@ -52,14 +52,12 @@ export function InfoCard(props) {
             <div className='w-10 text-center bg-indigo-400 p-2 rounded-full  transition-colors duration-200 dark:bg-yellow-500 dark:hover:bg-black hover:bg-white'>
               <Link href={url1} target="_blank">
                 <i className={icon1} />
-              </SmartLink>
             </div>
           )}
           {url2 && (
             <div className='bg-indigo-400 p-2 rounded-full w-10 items-center flex justify-center transition-colors duration-200 dark:bg-yellow-500 dark:hover:bg-black hover:bg-white'>
               <Link href={url2} target="_blank">
                 <i className={icon2} />
-              </SmartLink>
             </div>
           )}
         </div>
