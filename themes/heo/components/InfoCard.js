@@ -50,14 +50,16 @@ export function InfoCard(props) {
           {/* 两个社交按钮 */}
           {url1 && (
             <div className='w-10 text-center bg-indigo-400 p-2 rounded-full  transition-colors duration-200 dark:bg-yellow-500 dark:hover:bg-black hover:bg-white'>
-              <Link href={url1} target="_blank">
+              <SmartLink href={url1} target="_blank">
                 <i className={icon1} />
+              </SmartLink>
             </div>
           )}
           {url2 && (
             <div className='bg-indigo-400 p-2 rounded-full w-10 items-center flex justify-center transition-colors duration-200 dark:bg-yellow-500 dark:hover:bg-black hover:bg-white'>
-              <Link href={url2} target="_blank">
+              <SmartLink href={url2} target="_blank">
                 <i className={icon2} />
+              </SmartLink>
             </div>
           )}
         </div>
@@ -79,7 +81,7 @@ function MoreButton() {
     return <></>
   }
   return (
-    <Link href={url3} target="_blank">
+    <SmartLink href={url3} target="_blank">
       <div
         className={
           'group bg-indigo-400 dark:bg-yellow-500 hover:bg-white dark:hover:bg-black hover:text-black dark:hover:text-white flex items-center transition-colors duration-200 py-2 px-3 rounded-full space-x-1'
